@@ -1,9 +1,10 @@
+import css from './Feedback.module.css';
 import PropTypes from 'prop-types';
 export default function Buttons({ options, onLeaveFeedback }) {
   return (
-    <ul>
+    <ul className={css.buttons_section}>
       {options.map(option => (
-        <li key={option}>
+        <li key={option} className={css.buttons_colorized}>
           <button
             key={option}
             type="button"

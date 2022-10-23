@@ -1,3 +1,4 @@
+import css from './Feedback.module.css';
 import PropTypes from 'prop-types';
 
 export default function Statistics({
@@ -8,12 +9,14 @@ export default function Statistics({
   positivePercentage,
 }) {
   return (
-    <ul>
+    <ul className={css.container}>
       <li>Good: {good}</li>
       <li>Neutral: {neutral}</li>
       <li>Bad: {bad}</li>
       <li>Total: {total}</li>
-      <li>Positive feedback: {positivePercentage} %</li>
+      <li className={css.positive}>
+        Positive feedback: {positivePercentage} %
+      </li>
     </ul>
   );
 }

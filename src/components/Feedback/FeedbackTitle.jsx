@@ -1,8 +1,9 @@
+import css from './Feedback.module.css';
 import PropTypes from 'prop-types';
 export const FeedbackTitle = ({ title, children }) => {
   return (
-    <div>
-      <h2>{title}</h2>
+    <div className={css.container}>
+      <h2 className={css.container}>{title}</h2>
       {children}
     </div>
   );

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.buttons_section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.buttons_colorized {
+  cursor: pointer;
+}
+
+.buttons_colorized:hover {
+  fill: aqua;
+}
+
+.positive {
+  font-weight: 900;
+}
