@@ -1,6 +1,6 @@
 import css from './Feedback.module.css';
-import PropTypes from 'prop-types';
-export const FeedbackTitle = ({ title, children }) => {
+
+const FeedbackTitle = ({ title, children }) => {
   return (
     <div className={css.container}>
       <h2 className={css.container}>{title}</h2>
@@ -9,7 +9,4 @@ export const FeedbackTitle = ({ title, children }) => {
   );
 };
 
-FeedbackTitle.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.element.isRequired,
-};
+export default FeedbackTitle;
